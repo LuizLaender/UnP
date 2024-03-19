@@ -1,0 +1,15 @@
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\bin\Debug\net8.0\Aula03.exe
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\bin\Debug\net8.0\Aula03.deps.json
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\bin\Debug\net8.0\Aula03.runtimeconfig.json
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\bin\Debug\net8.0\Aula03.dll
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\bin\Debug\net8.0\Aula03.pdb
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.AssemblyInfoInputs.cache
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.AssemblyInfo.cs
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.csproj.CoreCompileInputs.cache
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.sourcelink.json
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.dll
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\refint\Aula03.dll
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.pdb
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\Aula03.genruntimeconfig.cache
+C:\code\UnP\2024\PSCom\Wanfranklin\Aula03\obj\Debug\net8.0\ref\Aula03.dll
