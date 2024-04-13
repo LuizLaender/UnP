@@ -1,0 +1,26 @@
+@startuml Aulas, professores e alunos
+hide circle
+top to bottom direction
+
+Professor "1" --> "0..*" Disciplina : ministra
+Disciplina "1" --> "1" Professor : é ministrada por
+Aluno "0..*" --> "0..*" Disciplina : está matriculado em
+
+class Professor {
+    - idProfessor: int
+    # salario: int
+    + nome: string
+}
+
+class Aluno {
+    - idAuluno: int
+    # nota: int
+    + nome: string
+}
+
+class Disciplina {
+    + nome: string
+    + horario: string
+}
+
+@enduml

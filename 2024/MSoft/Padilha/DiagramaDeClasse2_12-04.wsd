@@ -1,0 +1,17 @@
+@startuml Jornada de Maria
+
+left to right direction
+
+actor "Usuario" as usuario
+actor "Admin do sistema" as admin
+
+rectangle "Sistema de gerenciamento de tarefas" {
+    usuario --> (Cadastrar tarefa)
+    usuario --> (Visualizar Lista de Tarefas)
+    usuario --> (Marcar Tarefa como Concluída)
+    usuario --> (Editar Tarefa)
+    usuario --> (Remover Tarefa)
+    admin --> (Gerenciar Usuários)
+}
+
+@enduml
