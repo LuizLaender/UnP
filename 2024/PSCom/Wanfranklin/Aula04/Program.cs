@@ -34,7 +34,7 @@ class Program
             case "4":
             Sair();
             return false;
-            default: 
+            default:
             return true;
 
         }
