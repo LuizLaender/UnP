@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc4ai2c7romca"]
+
+[ext_resource type="Script" path="res://text_adventure.gd" id="1_tcjby"]
+
+[node name="TextAdventure" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tcjby")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 750.0
+color = Color(0.537255, 0.756863, 0.788235, 1)
+
+[node name="TextArea" type="RichTextLabel" parent="Background"]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 84.0
+offset_right = 1001.0
+offset_bottom = 509.0
+bbcode_enabled = true
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 548.0
+offset_right = 811.0
+offset_bottom = 606.0
+
+[node name="Location" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 544.0
+offset_right = 703.0
+offset_bottom = 40.0
+bbcode_enabled = true
+text = "Location"
+
+[node name="Commands" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 26.0
+offset_right = 686.0
+offset_bottom = 66.0
+color = Color(0.984314, 0.243137, 0.564706, 1)
+
+[node name="Label" type="Label" parent="Commands"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 6.0
+offset_right = 188.0
+offset_bottom = 29.0
+text = "Look | Go To | Check"
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

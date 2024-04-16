@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn03ny8wpepwh"]
+
+[ext_resource type="Script" path="res://control.gd" id="1_a5t84"]
+[ext_resource type="Script" path="res://Input_TextBox.gd" id="2_osrt4"]
+[ext_resource type="Script" path="res://GUI_CurrentLocation.gd" id="2_yjcse"]
+
+[node name="TextAdventure" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_a5t84")
+
+[node name="GUI_Background-Fullscreen" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1156.0
+offset_bottom = 653.0
+color = Color(0.368627, 0.219608, 0.211765, 1)
+metadata/_edit_lock_ = true
+
+[node name="GUI_CurrentPlaceDescription" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 136.0
+offset_right = 1040.0
+offset_bottom = 400.0
+bbcode_enabled = true
+
+[node name="GUI_BackgroundColor" type="ColorRect" parent="GUI_CurrentPlaceDescription"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -16.0
+offset_right = 867.0
+offset_bottom = 241.0
+color = Color(1, 1, 1, 0.215686)
+
+[node name="GUI_CurrentLocation" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 16.0
+offset_right = 842.0
+offset_bottom = 122.0
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "Location
+"
+script = ExtResource("2_yjcse")
+
+[node name="GUI_Background-PossibleChoices" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 457.0
+offset_right = 685.0
+offset_bottom = 501.0
+color = Color(0, 0.647059, 0.694118, 1)
+
+[node name="GUI_PossibleChoices-Text" type="Label" parent="GUI_Background-PossibleChoices"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 10.0
+offset_right = 202.0
+offset_bottom = 34.0
+text = "Look / Go to / Check"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_top = 6.0
+offset_right = 1468.0
+offset_bottom = 758.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="Log" type="RichTextLabel" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+text = "alsjdkfjhasd
+]fasldkfjhalskdf
+asdfjásodf
+asdfjasçdkfjas4df
+asjdkçlf"
+
+[node name="Input_TextBox" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 512.0
+offset_right = 795.0
+offset_bottom = 569.0
+script = ExtResource("2_osrt4")
+
+[connection signal="text_submitted" from="Input_TextBox" to="." method="_on_line_edit_text_submitted"]
