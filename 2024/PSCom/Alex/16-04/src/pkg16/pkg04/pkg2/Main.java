@@ -35,6 +35,14 @@ public class Main {
         
         System.out.println("nota "+A1.getNota());
         
+        
+        Professor Pr1 = new Professor("Programacao", "Pascal", "12345678");
+        System.out.println("CPF: "+Pr1.getCPF() + "Nome: " + Pr1.getNome());
+        
+        Pr1.Falar();
+        A1.Falar();
+        
+        Pr1.CalcSalario(50, 40);
+        System.out.println("Salario do prof: " + Pr1.getSalario());
     }
-    
 }

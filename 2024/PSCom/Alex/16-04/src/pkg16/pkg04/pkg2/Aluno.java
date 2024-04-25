@@ -26,4 +26,8 @@ public class Aluno extends Pessoa{
         this.Nota = Nota;
     }
     
+    @Override
+    public void Falar(){
+        System.out.println("ME DA PONTO!");
+    }
 }

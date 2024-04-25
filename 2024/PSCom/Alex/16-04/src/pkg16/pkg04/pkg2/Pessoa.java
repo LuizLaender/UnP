@@ -49,4 +49,7 @@ public class Pessoa {
         this.Sexo = Sexo;
     }
     
+    public void Falar(){
+        System.out.println("Eu sou uma pessoa!");
+    }
 }
